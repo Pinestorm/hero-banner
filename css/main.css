@@ -1,41 +1,52 @@
 html {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-  line-height: 1.5;
-  overflow: hidden;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-.banner {
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+article {
   position: relative;
-  font-size: 4rem;
-}
-
-.banner-content {
-  padding: 0 1rem;
-  position: absolute;
-  bottom: 1rem;
-  left: 10%;
-}
-
-.banner-content h2 {
-  background-color: rgba(0, 0, 0, .5);
-  font-size: 4rem
-  color: #fff;
-}
-
-.banner-content p {
-  font-size: 2rem;
-  font-style: italic;
-  font-family: "Open Sans", cursive;
+  overflow: hidden;
+  max-height: 500px;
 }
 
 .img-flex {
   display: block;
   width: 100%;
-  max-width: 50em;
-  max-height: 500px;
+}
+
+.banner {
+  position: absolute;
+  width: 100%;
+  max-width: 785px;
+  padding: 0 1rem;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h2 {
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+h2 span {
+font-size: 4rem;
+background-color: rgba(0, 0, 0, .5);
+color: #fff;
+}
+
+p {
+  font-size: 2rem;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: .75em;
 }
